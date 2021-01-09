@@ -7,7 +7,7 @@ from nltk.stem import WordNetLemmatizer
 
 lemmatizer = WordNetLemmatizer()
 
-words = pickle.load(open(r"data\words.pkl", 'rb'))
+words = pickle.load(open(r'data\words.pkl', 'rb'))
 classes = pickle.load(open(r'data\classes.pkl', 'rb'))
 	
 def clean_up_sentence(sentence):
