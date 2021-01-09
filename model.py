@@ -10,7 +10,7 @@ def predict(input_data) -> list:
     type, data = input_data['type'], input_data['data']
     
     if type == 'conv':
-        model = load_model(r"data\chatbot_model.h5")
+        model = load_model(r"/app/data/chatbot_model.h5")
         result = predict_class(data, model)
         #print(data, result)
 
