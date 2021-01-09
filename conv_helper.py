@@ -7,8 +7,8 @@ from nltk.stem import WordNetLemmatizer
 
 lemmatizer = WordNetLemmatizer()
 
-words = pickle.load(open(r'/app/data/words.pkl', 'rb'))
-classes = pickle.load(open(r'/app/data/classes.pkl', 'rb'))
+words = pickle.load(open(r'words.pkl', 'rb'))
+classes = pickle.load(open(r'classes.pkl', 'rb'))
 	
 def clean_up_sentence(sentence):
     sentence_words = nltk.word_tokenize(sentence)
