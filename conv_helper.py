@@ -5,6 +5,11 @@ import nltk
 import numpy as np
 from nltk.stem import WordNetLemmatizer
 
+nltk.download('punkt')
+nltk.download('stopwords')
+nltk.download('wordnet')
+nltk.download('vader_lexicon')
+
 lemmatizer = WordNetLemmatizer()
 
 words = pickle.load(open(r'words.pkl', 'rb'))
